@@ -13,17 +13,22 @@ const NavBar = () => {
 
                     <Stack direction='row' spacing={2}>
                         <Typography>
-                            <LinkScroll offset = {-100} smooth spy to='about' duration={300}>
+                            <LinkScroll offset={-100} smooth spy to='about' duration={300}>
                                 <Button style={{ color: 'white' }}> <Typography variant='h5' textTransform={'capitalize'}>About</Typography></Button>
                             </LinkScroll>
-                            <LinkScroll offset = {-100} smooth spy to='projects' duration={300}>
+                            <LinkScroll offset={-100} smooth spy to='projects' duration={300}>
                                 <Button style={{ color: 'white' }}> <Typography variant='h5' textTransform={'capitalize'}>Projects</Typography></Button>
                             </LinkScroll>
 
-                            <LinkScroll offset = {-100} smooth spy to='contact' duration={300}>
+                            <LinkScroll offset={-100} smooth spy to='contact' duration={300}>
 
                                 <Button style={{ color: 'white' }}><Typography variant='h5' textTransform={'capitalize'}>Contact</Typography></Button>
                             </LinkScroll>
+                            <Link to="/Blog">
+                                <Button style={{ color: 'white', textDecoration:'none' }}><Typography variant='h5' textTransform={'capitalize'}>Blog</Typography></Button>
+
+
+                            </Link>
                         </Typography>
                     </Stack>
                 </Toolbar>

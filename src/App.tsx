@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
-import Projects from './pages/Projects';
 import { Box, Button, Container, Icon, IconButton, SvgIcon, Typography } from '@mui/material';
 import { Stack } from '@mui/system';
 import logo from './person-295.svg'
+
+
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Container id='contact' sx={{ width: 'auto', height: 900, bgcolor: '#83c5eb', justifyContent: 'center' }}>
         <h1>Contact</h1>
       </Container>
-
+      
 
       <footer style={{ padding: '10em 10em 10em 10em' }}>
         <Container>

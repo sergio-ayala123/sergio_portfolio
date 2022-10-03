@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import { Route, Routes } from 'react-router-dom';
-import { Box, Button, Container, Icon, IconButton, SvgIcon, Typography } from '@mui/material';
+import { Box, Button, Container, Icon,Typography } from '@mui/material';
 import { Stack } from '@mui/system';
 import logo from './person-295.svg'
 

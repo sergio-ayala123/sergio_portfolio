@@ -31,7 +31,7 @@ function App() {
         <Container>
           <Box sx={{ justifyContent: 'center', display: 'flex' }}>
             <Icon style={{ width: 100, height: 100 }}>
-              <img src={logo} height={100} width={100} ></img>
+              <img src={logo} height={100} width={100} alt = "logo" ></img>
             </Icon>
           </Box>
 

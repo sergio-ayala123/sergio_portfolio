@@ -1,8 +1,4 @@
-import { Card, Grid } from "@mui/material";
-import BlogEntry from "../components/BlogTitle";
-import ReactMarkdown from "react-markdown";
-import ReactDom from 'react-dom'
-import { useEffect, useState } from "react";
+import {Grid } from "@mui/material";
 import BlogTitle from "../components/BlogTitle";
 
 const Blog = () => {

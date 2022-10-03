@@ -24,7 +24,7 @@ const NavBar = () => {
 
                                 <Button style={{ color: 'white' }}><Typography variant='h5' textTransform={'capitalize'}>Contact</Typography></Button>
                             </LinkScroll>
-                            <Link to="/Blog">
+                            <Link to="/sergio_portfolio/Blog">
                                 <Button style={{ color: 'white', textDecoration:'none' }}><Typography variant='h5' textTransform={'capitalize'}>Blog</Typography></Button>
 
 

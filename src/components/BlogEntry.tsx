@@ -12,7 +12,7 @@ const BlogEntry = () => {
         fetch("../" + title + ".md")
             .then((res) => res.text())
             .then((text) => setContent(text));
-    }, [title]);
+    });
 
 
     return (

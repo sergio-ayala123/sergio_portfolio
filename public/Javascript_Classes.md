@@ -2,18 +2,21 @@
 
 A simple class in JavaScript can be made like this:
 
-```JavaScript
-
-    class Student {
-        name = ''
-        age = 0
-    }
+```javascript
+        class Student {
+            name = ''
+            age = 0
+            constructor(name,age){
+            this.name = name;
+            this.age = age;
+            }
+        }
     
 
 ```
 
 We then need to add a constructor to initialize these values whenever we create a new object.
-```Javascript
+```javascript
 
     class Student {
         name = ''
@@ -30,7 +33,7 @@ We then need to add a constructor to initialize these values whenever we create 
 
 A class by itself without any methods has minimal functionality. We can begin to add methods to this simple class like so: 
 
-```JavaScript
+```javascript
 
     class Student {
         name = ''
@@ -62,7 +65,7 @@ With this get function we can return the students name and age as well.
 To test some of this functionality we can use the testing library 'Jest' and create the following test cases:
 
 
-``` JavaScript
+``` javascript
 
 
     const {Student} = require('./Student')

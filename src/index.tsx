@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Blog from './pages/Blog';
 import BlogEntry from './components/BlogEntry';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

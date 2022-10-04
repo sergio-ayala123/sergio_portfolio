@@ -1,7 +1,7 @@
 import {useParams } from 'react-router-dom'
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react"
-
+import CodeBlock from './CodeBlock';
 
 const BlogEntry = () => {
     const { title } = useParams();
@@ -18,8 +18,10 @@ const BlogEntry = () => {
     return (
         <div className='Blog'>
             <p className='date'>{title}</p>
-           
-            <ReactMarkdown children={content}  />
+           <article>
+
+            <ReactMarkdown children={content} components = {{code:CodeBlock}} />
+           </article>
         </div>
     );
 }

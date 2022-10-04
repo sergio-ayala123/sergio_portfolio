@@ -3,13 +3,12 @@
 
 ## Hashmaps
 In this simple function we create a Map object to be used for testing.
-``` Javascript
+``` javascript
 
 function createHashMap(){
     const map = new Map();
     return map
 }
-
 
 ```
 
@@ -20,7 +19,7 @@ A map holds key value pairs, the value on the right being the key and value on t
 \
 We can set values like this:
 
-``` Javascript
+``` javascript
 
     map.set(1,'bob')
     map.set(2,'billy')
@@ -35,7 +34,7 @@ We can set values like this:
 
 Retrieving values from maps is pretty straightforward 
 
-``` Javascript
+``` javascript
 
     const item = map.get(1)
 
@@ -51,7 +50,7 @@ The value in the item variable in this case is 'bob'
 You can also delete specific items from the Map like this:
 
 
-``` Javascript
+``` javascript
 
 map.delete(1)
 
@@ -63,7 +62,7 @@ The map now doesn't have key 1 with value of 'bob'
 \
 We can use a testing library known as 'Jest' to verify this behavior is correct.
 
-``` Javascript
+``` javascript
 
                     const createHashMap = require('./hashMap')
 
@@ -116,7 +115,7 @@ We can use a testing library known as 'Jest' to verify this behavior is correct.
 
 Javascript has a Collection named a Set, we can create a similar function above to create and return a set 
 
-``` Javascript
+``` javascript
 
 function createSet() {
     const set = new Set();
@@ -128,7 +127,7 @@ function createSet() {
 
 You can add items to a set using the add function like this: 
 
-``` Javascript
+``` javascript
 
     set.add(23)
     set.add(1203)
@@ -138,7 +137,7 @@ You can add items to a set using the add function like this:
 
 The Set Collection also has a delete function that you can use to delete specific items from that Set like this: 
 
-``` Javascript
+``` javascript
 
     set.delete(23)
 
@@ -146,7 +145,7 @@ The Set Collection also has a delete function that you can use to delete specifi
 
 We can use the same testing library as above to test the functionality of a Set like this: 
 
-```Javascript
+```javascript
 
     test('Set is created correctly', () => {
         expect(createSet()).toEqual(new Set())
@@ -200,7 +199,7 @@ We can use the same testing library as above to test the functionality of a Set 
 
 The Stack in JavaScript is very easy to create
 
-``` Javascript
+``` javascript
 
     stack = []
 
@@ -209,7 +208,7 @@ The Stack in JavaScript is very easy to create
 
 A Stack is a First In First Out (FIFO) data structure. You can use the Push function to add elements to the Stack
 
-``` Javascript
+``` javascript
 
     stack.push(1)
     stack.push(2)
@@ -223,7 +222,7 @@ The stack now looks like this: [1,2,3]
 \
 To remove elements from the Stack you use the Pop function like this:
 
-```Javascript
+```javascript
     removedItem = stack.pop()
 
 ```
@@ -232,9 +231,9 @@ Since a Stack is FIFO, the removedItem variable is 3, since 3 was the most recen
 
 Tests for these functions can be written like this:
 
-``` Javascript
+``` javascript
 
-    test('Stack Initialization', () => {
+test('Stack Initialization', () => {
     const stack = []
     
     expect(stack).toEqual([])

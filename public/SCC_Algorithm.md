@@ -1,17 +1,8 @@
 # Strongly Connected Components Algorithm
 
 The Kosaraju-Sharir algorithm is used to find the strongly connected components of a graph
-
-
-\
 A Strongly Connected Component in a graph is a group of nodes that can all reach each other through their connections. 
-
-
-\
 An easy way to identify a Strongly Connected Component in a graph is to just look and see where there is a cycle.
-
-
-\
 This algorithm to find the SCCs of a graph consists of 3 steps.
 
 \
@@ -28,7 +19,7 @@ _
 \
 Let's start with the first step, here I have sample code that will do this: 
 
-``` Python
+``` python
 
     visited = []
     visited_order = []
@@ -62,7 +53,7 @@ In the end we return the list containing the nodes that were visited
 \
 The next step is to reverse the graph, here is some sample code that does this: 
 
-```Python 
+```python 
 
     def reverse_graph(graph):
         newGraph = {}
@@ -89,7 +80,7 @@ The basic idea of this function is to look at each key and see if it appears in 
 
 So the reverse for the graph above would be 
 
-``` Python
+``` python
 
     reverse_graph_result = {
         0: {2},
@@ -105,7 +96,7 @@ So the reverse for the graph above would be
 \
 The final step of this process is to perform Depth First Search again on the reversed graph like this:
 
-```Python 
+```python 
 
     stack = explore_new(0)
     def explore_reverse(graph, v):

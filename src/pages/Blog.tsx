@@ -4,7 +4,7 @@ import BlogTitle from "../components/BlogTitle";
 const Blog = () => {
 
 
-    const mdFileNames = ["9-20-2022", "9-21-2022","9-27-2022_1", "9-30-2022"]
+    const mdFileNames = ["Hashmaps_Collections_Stacks", "Javascript_Classes","Python_TDD", "SCC_Algorithm"]
 
     return (
         <div className="Blog">
@@ -18,3 +18,4 @@ const Blog = () => {
 }
  
 export default Blog;
+

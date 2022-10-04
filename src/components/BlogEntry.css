@@ -36,23 +36,19 @@ ul {
     hyphens: auto;
 }
 
-pre{
-    color: #FFDA53;
-    /* font-family: 'Roboto-Condensed'; */
-    font-size: 25px;
-    line-height: 26px;
-    text-indent: 30px;
-    margin: 0;
-    display:flex;
+pre div code{
+    display:inline-block;
     justify-content: center;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
+    font-size: 20px;
+    padding:2em;
+    border-radius: 10px;
+    border: solid thin;
+    background-color: #23241f;
 }
 
 .Blog {
     background-color: #222222;
-    height: 450vh;
+    height: 470vh;
     padding-top: 5em;
     white-space: initial;
     
@@ -62,14 +58,12 @@ p {
     color: #ffffff;
     /* font-family: 'Roboto-Condensed'; */
     font-size: 22px;
-    line-height: 26px;
-    text-indent: 30px;
+    line-height: 20px;
+    padding:0.5em;
     margin: 0;
     display:flex;
-    text-align: center;
     justify-content: center;
     overflow-wrap: break-word;
-    word-wrap: break-word;
     hyphens: auto;
 }
 
@@ -88,4 +82,11 @@ p {
     margin: 0 0 30px;
     padding: 10px 15px 8px;
     text-transform: uppercase;
+}
+
+article {
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }

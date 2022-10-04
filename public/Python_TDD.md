@@ -3,10 +3,6 @@
 Test Driven Development is the process of creating test cases before any actual code is written. The basic rules to TDD are this:
 
 
-\
-_
-
-
 
 **Write production code only to pass a failing unit test**
 
@@ -22,7 +18,7 @@ With these rules in mind, we can begin to create tests for a simple Calculator a
 
 
 
-```Javascript
+```python
 
     def test_add():
         calculator = Calculator()
@@ -62,7 +58,7 @@ With these written we can begin creating a class named Calculator that has these
 Our class will look like this:
 
 
-```Javascript
+```python
 
     class Calculator:
         x = 0
@@ -97,7 +93,7 @@ Our class will look like this:
 After this we can then write a main function that will ask the user for input 
 
 
-```Javascript
+```python
 
 
     if __name__ == '__main__':

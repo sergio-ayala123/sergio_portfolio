@@ -1,7 +1,6 @@
 import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll"
-import { motion } from 'framer-motion'
 const NavBar = () => {
     return (
         <>

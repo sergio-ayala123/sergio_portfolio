@@ -1,31 +1,40 @@
-import { AppBar, Button,Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll"
+import { motion } from 'framer-motion'
 const NavBar = () => {
     return (
         <>
-            <AppBar position="sticky" style={{ backgroundColor: '#2E82B3' }}>
+            <AppBar position="sticky" style={{ backgroundColor: '#1e2021' }}>
                 <Toolbar>
 
-                    <Typography variant='h4' style={{ flexGrow: 1 }}>
-                        Sergio Ayala
-                    </Typography>
+                    <Link to="/sergio_portfolio" style={{ textDecoration: 'none' }}>
+                        <Button>
+                            <Typography variant='h4' style={{ flexGrow: 1 }}>
 
-                    <Stack direction='row' spacing={2}>
+                                Sergio Ayala
+
+                            </Typography>
+                        </Button>
+
+                    </Link>
+
+                    <Stack direction='row' spacing={2} style={{ flexGrow: 8 }}>
                         <Typography>
-                            <LinkScroll offset={-100} smooth spy to='about' duration={300}>
-                                <Button style={{ color: 'white' }}> <Typography variant='h5' textTransform={'capitalize'}>About</Typography></Button>
-                            </LinkScroll>
-                            <LinkScroll offset={-100} smooth spy to='projects' duration={300}>
-                                <Button style={{ color: 'white' }}> <Typography variant='h5' textTransform={'capitalize'}>Projects</Typography></Button>
-                            </LinkScroll>
+
+                            <Link to="/sergio_portfolio/Projects" style={{ textDecoration: 'none' }}>
+
+                                <Button> <Typography variant='h5' textTransform={'capitalize'} >Projects</Typography></Button>
+                            </Link>
 
                             <LinkScroll offset={-100} smooth spy to='contact' duration={300}>
+                                <Link to="/sergio_portfolio/Contact" style={{ textDecoration: 'none' }}>
 
-                                <Button style={{ color: 'white' }}><Typography variant='h5' textTransform={'capitalize'}>Contact</Typography></Button>
+                                    <Button><Typography variant='h5' textTransform={'capitalize'}>Contact</Typography></Button>
+                                </Link>
                             </LinkScroll>
-                            <Link to="/sergio_portfolio/Blog">
-                                <Button style={{ color: 'white', textDecoration:'none' }}><Typography variant='h5' textTransform={'capitalize'}>Blog</Typography></Button>
+                            <Link to="/sergio_portfolio/Blog" style={{ textDecoration: 'none' }}>
+                                <Button><Typography variant='h5' textTransform={'capitalize'}>Blog</Typography></Button>
 
 
                             </Link>

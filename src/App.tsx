@@ -1,37 +1,34 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import { Box, Button, Container, Icon,Typography } from '@mui/material';
+import { Box, Button, Container, Icon, Typography, Grid } from '@mui/material';
 import { Stack } from '@mui/system';
-import logo from './person-295.svg'
-
+import logo from './person-295.svg';
+import {motion} from 'framer-motion';
 
 
 function App() {
   return (
-    < div id='top'>
-      <NavBar />
+    < motion.div id='top' initial = {{opacity:0}} animate = {{opacity:1}} exit = {{opacity:0}}>
 
-      <Container id='about' sx={{ width: 'max-auto', height: 900, bgcolor: '#83c5eb', justifyContent: 'center' }}>
-        <h1> About
-        </h1>
-      </Container>
-
-
-      <Container id='projects' sx={{ width: 'auto', height: 900, bgcolor: '#83c5eb', justifyContent: 'center' }}>
-        <h1>Projects</h1>
-      </Container>
-
-      <Container id='contact' sx={{ width: 'auto', height: 900, bgcolor: '#83c5eb', justifyContent: 'center' }}>
-        <h1>Contact</h1>
-      </Container>
       
+      <div style = {{height:1000, display:'flex', justifyContent:'center'}}>
+        <div style  = {{marginBottom:'auto', marginTop:'auto',  justifyContent:'center'}}>
+            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} whileTap = {{scale:5, transition:{duration:0.2}}} style = {{color:'white'}}>Hi, </motion.h3>
+            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} style = {{color:'white'}}>I'm Sergio, </motion.h3>
+            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} style = {{color:'white'}}>Software Engineer</motion.h3>
+            <div id = "animationTest" style = {{border:'solid white', width:200, height:200}}>
+            </div>
+        </div>
+      </div>
+
+
 
       <footer style={{ padding: '10em 10em 10em 10em' }}>
         <Container>
           <Box sx={{ justifyContent: 'center', display: 'flex' }}>
             <Icon style={{ width: 100, height: 100 }}>
-              <img src={logo} height={100} width={100} alt = "logo" ></img>
+              <img src={logo} height={100} width={100} alt="logo" ></img>
             </Icon>
           </Box>
 
@@ -47,7 +44,7 @@ function App() {
       </footer>
 
 
-    </div>
+    </motion.div>
 
   );
 }

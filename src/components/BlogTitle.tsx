@@ -1,4 +1,3 @@
-import { Card } from "@mui/material";
 import { Link } from "react-router-dom";
 import './BlogEntry.css'
 import {motion} from 'framer-motion'

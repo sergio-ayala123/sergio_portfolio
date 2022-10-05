@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import NavBar from '../components/NavBar';
 
 const Projects = () => {
     return (

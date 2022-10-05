@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import Blog from './pages/Blog';
-import BlogEntry from './components/BlogEntry';
-import Projects from './pages/Projects';
+import { BrowserRouter} from 'react-router-dom';
+
 import AnimatedRoutes from './components/AnimatedRoutes';
 import NavBar from './components/NavBar';
 

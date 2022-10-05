@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import { Box, Button, Container, Icon, Typography, Grid } from '@mui/material';
+import { Box, Button, Container, Icon, Typography} from '@mui/material';
 import { Stack } from '@mui/system';
 import logo from './person-295.svg';
 import {motion} from 'framer-motion';
@@ -14,8 +13,7 @@ function App() {
       
       <div style = {{height:1000, display:'flex', justifyContent:'center'}}>
         <div style  = {{marginBottom:'auto', marginTop:'auto',  justifyContent:'center'}}>
-            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} whileTap = {{scale:5, transition:{duration:0.2}}} style = {{color:'white'}}>Hi, </motion.h3>
-            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} style = {{color:'white'}}>I'm Sergio, </motion.h3>
+            <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} whileTap = {{scale:5, transition:{duration:0.2}}} style = {{color:'white'}}>Sergio Ayala </motion.h3>
             <motion.h3 whileHover={{scale:2, transition:{duration:0.3}}} style = {{color:'white'}}>Software Engineer</motion.h3>
             <div id = "animationTest" style = {{border:'solid white', width:200, height:200}}>
             </div>

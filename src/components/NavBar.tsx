@@ -7,20 +7,19 @@ const NavBar = () => {
     const [projectClick, setProjectClick] = useState(false)
     const [contactClick, setContactClick] = useState(false)
     const [blogClick, setBlogClick] = useState(false)
-    const [homeClick, setHomeClick] = useState(false)
 
     const clickedButton = (event: React.MouseEvent<HTMLButtonElement>) => {
-        if (event.currentTarget.value == 'projects') {
+        if (event.currentTarget.value === 'projects') {
             setProjectClick(true)
             setContactClick(false)
             setBlogClick(false)
         }
-        else if (event.currentTarget.value == 'contact') {
+        else if (event.currentTarget.value === 'contact') {
             setContactClick(true)
             setProjectClick(false)
             setBlogClick(false)
         }
-        else if (event.currentTarget.value == 'blog') {
+        else if (event.currentTarget.value === 'blog') {
             setBlogClick(true)
             setProjectClick(false)
             setContactClick(false)

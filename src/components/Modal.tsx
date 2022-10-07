@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
 
 const Modal: React.FC<{ showModal: boolean, projectName:string,  setShowModal: (value:boolean) => void }> = (props) => {
 

@@ -4,9 +4,9 @@ import {motion} from 'framer-motion'
 const BlogTitle: React.FC<{ name: string }> = (props) => {
 
     return (
-        <div className = "Blog">
+        <div>
             <Link to={props.name}>
-                <motion.button whileHover = {{scale:1.2}} whileTap = {{scale:0.7}} style={{ border: 'solid', padding:'1em', backgroundColor:'#383235'}}>
+                <motion.button whileHover = {{scale:1.2}} whileTap = {{scale:0.7}} style={{ border: 'solid', padding:'1em', backgroundColor:'#ffffff'}}>
                     <h4>{props.name}</h4>
                 </motion.button>
             </Link>

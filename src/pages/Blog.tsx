@@ -17,6 +17,5 @@ const Blog = () => {
         </motion.div>
     );
 }
- 
 export default Blog;
 

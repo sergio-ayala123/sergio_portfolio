@@ -6,6 +6,7 @@ import { BrowserRouter} from 'react-router-dom';
 
 import AnimatedRoutes from './components/AnimatedRoutes';
 import NavBar from './components/NavBar';
+import SiteLinks from './components/SiteLinks';
 
 
 const root = ReactDOM.createRoot(
@@ -15,7 +16,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <NavBar/>
-
     <AnimatedRoutes/>
   </BrowserRouter >
 );

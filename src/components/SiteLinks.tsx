@@ -17,7 +17,7 @@ const SiteLinks = () => {
         </motion.div>
         <motion.div whileHover={{ width: '150px' }} onHoverStart={() => setHoverGithub(true)} onHoverEnd={() => setHoverGithub(false)} style={{ height: '75px', width: '75px', border: 'solid', background: 'white', textAlign: 'right' }}>
           {hoverGithub ? <span style={{ display: 'flex', justifyContent: 'left' }}>  <img src={githubImg} alt = "github" height="75px" width="75px" style={{ justifyContent: 'right', display: 'flex' }} /> <h3 style={{ color: 'black' }}>GitHub</h3> </span> :
-            <img src={githubImg} alt = "github-singleheight="75px" width="75px" style={{ justifyContent: 'left', display: 'flex' }} />
+            <img src={githubImg} alt = "github-single" height="75px" width="75px" style={{ justifyContent: 'left', display: 'flex' }} />
           }
         </motion.div>
       </div>

@@ -9,7 +9,6 @@ const Projects = () => {
     const [showModal, setShowModal] = useState(false)
     const [projectName, setProjectName] = useState('')
     const [description, setDescription] = useState('')
-    const [viewProject, setViewProject] = useState(false)
 
     const changeModal = (value: boolean) => {
         setShowModal(value)
@@ -38,9 +37,9 @@ const Projects = () => {
 
                 {projects.map((j: any) => <Grid item xs={12} md={5} sx={{ backgroundColor: '#332F2E', height: '200px', margin:'10px',  display: 'flex', justifyContent: 'center' }}
                     onClick={() => { setProjectName(j.name); setDescription(j.description);setShowModal(true) }}>
-                    <motion.div onHoverStart={() => setViewProject(true)} onHoverEnd={() => setViewProject(false)}>
+                    <motion.div >
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <img src={j.logo} height="150px" ></img>
+                            <img src={j.logo} height="150px" alt = {String(j.logo)}></img>
                         </div>
                         
                     </motion.div>

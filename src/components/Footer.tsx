@@ -8,14 +8,14 @@ const Footer = () => {
         <footer className = "footer">
           <div style={{ justifyContent: 'center', display: 'flex', background:'black'  }}>
             <motion.div style={{padding:'1em'}} >
-                <a href = "">
+                <a href = "https://www.linkedin.com/in/sergio-ayala-166066200/">
 
 
                 <img src = {linkedIn} height= '100px' width = '100px' style={{borderRadius:'20%'}}></img>
                 </a>
             </motion.div>
             <motion.div style={{padding:'1em'}} >
-                <a href = "">
+                <a href = "https://github.com/sergio-ayala123">
 
                 <img src = {githubImg} height= '100px' width = '100px' style={{borderRadius:'20%'}}></img>
                 </a>

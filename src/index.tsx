@@ -6,6 +6,7 @@ import { BrowserRouter} from 'react-router-dom';
 
 import AnimatedRoutes from './components/AnimatedRoutes';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(
@@ -16,6 +17,7 @@ root.render(
   <BrowserRouter>
     <NavBar/>
     <AnimatedRoutes/>
+    <Footer/>
   </BrowserRouter >
 );
 

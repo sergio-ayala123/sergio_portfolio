@@ -1,21 +1,22 @@
 h1 {
-    display:flex;
+    display: flex;
     justify-content: center;
     color: #ffffff;
-    font-family: 'Ubuntu';
-    text-decoration:underline;
+    font-family: 'Bowlby One SC', cursive;
+    text-decoration: underline;
     text-underline-offset: 20px;
     font-size: 54px;
     font: bold;
     line-height: 58px;
     margin: 0 0 58px;
 }
+
 h2 {
-    display:flex;
+    display: flex;
     justify-content: center;
     color: #ffffff;
-    font-family: 'Ubuntu';
-    text-decoration:underline;
+    font-family: 'Bowlby One SC', cursive;
+    text-decoration: underline;
     text-underline-offset: 20px;
     font-size: 40px;
     font: bold;
@@ -36,35 +37,33 @@ ul {
     hyphens: auto;
 }
 
-pre div code{
-    display:inline-block;
+pre div code {
+    display: inline-block;
     justify-content: center;
     font-size: 20px;
-    padding:2em;
+    padding: 2em;
     border-radius: 10px;
     border: solid thin;
     background-color: #23241f;
     width: 1200px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Blog {
     background-color: #222222;
-    height: 470vh;
     padding-top: 5em;
     white-space: initial;
-    
+
 }
 
 p {
     color: #ffffff;
-    /* font-family: 'Roboto-Condensed'; */
     font-size: 22px;
     line-height: 20px;
-    width:1200px;
+    width: 1200px;
     text-align: left;
-    padding:1em 1em 1em 0em;
+    padding: 1em 1em 1em 0em;
     overflow-wrap: break-word;
     hyphens: auto;
 }
@@ -97,55 +96,77 @@ body {
     background-color: #222222;
 }
 
-#animationTest:hover{
-   background-color: red;
-   transition: 1s transform;
-   transform: translateX(120%);
+#animationTest:hover {
+    background-color: red;
+    transition: 1s transform;
+    transform: translateX(120%);
 }
 
- #animationTest:not(:hover)  {
-    background-color:transparent;
+#animationTest:not(:hover) {
+    background-color: transparent;
     transition: 1s transform;
-    transform:translateX(0%)
-} 
+    transform: translateX(0%)
+}
 
 .clickedButton {
     background-color: transparent;
     border: none;
-    color: red;   
+    color: turquoise;
 }
+
 .notClicked {
     background-color: transparent;
     border: none;
-    color: white; 
+    color: white;
 }
 
 .backdrop {
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index:1;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .modal {
-    max-width: 400px;
-    margin:0 auto;
+    max-width: 800px;
+    height: 800px;
+    margin: 0 auto;
     padding: 40px 20px;
-    background: white;
+    background: #332F2E;
     border-radius: 10px;
     text-align: center;
+
 }
 
 .modal button {
-    color:#444;
-    border-color:#444;
+    color: #444;
+    border-color: #444;
     font-weight: bold;
     margin-top: 20px;
+
 }
+
 .modal p {
-    color:#444;
-    font-weight:bold;
+    color: #444;
+    font-weight: bold;
+}
+
+.footer {
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+}
+
+h3 {
+    font-family: 'Bowlby One SC', cursive;
+    font-style:normal;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Bowlby One SC', cursive;
+
 }

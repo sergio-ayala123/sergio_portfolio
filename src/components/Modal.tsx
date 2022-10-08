@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 
-const Modal: React.FC<{ showModal: boolean, projectName:string,  setShowModal: (value:boolean) => void }> = (props) => {
+const Modal: React.FC<{ showModal: boolean, projectName:string, description:string, setShowModal: (value:boolean) => void }> = (props) => {
 
     const backdrop = {
         visible: { opacity: 1 },
@@ -25,7 +25,8 @@ const Modal: React.FC<{ showModal: boolean, projectName:string,  setShowModal: (
                 <motion.div className="backdrop" variants={backdrop} animate="visible" initial="hidden" exit="hidden">
                     <motion.div className="modal" variants={modal} >
                         <p>{props.projectName}</p>
-                        <button onClick={() => props.setShowModal(false)}>Close</button>
+                        <p>{props.description}</p>
+                        <button style = {{position:'absolute', bottom:0, }} onClick={() => props.setShowModal(false)}>Close</button>
                     </motion.div>
                 </motion.div>
             )}

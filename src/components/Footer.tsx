@@ -6,7 +6,7 @@ const Footer = () => {
     return ( 
         <>
         <footer className = "footer">
-          <div style={{ justifyContent: 'center', display: 'flex', background:'black'  }}>
+          <div style={{ justifyContent: 'center', display: 'flex', background:'#242b30'  }}>
             <motion.div style={{padding:'1em'}} >
                 <a href = "https://www.linkedin.com/in/sergio-ayala-166066200/">
 

@@ -30,10 +30,9 @@ const Projects = () => {
     console.log(pokeAPI)
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style ={{minHeight:'100vh'}}>
-            <h1>THis is the projects page</h1>
             <Modal showModal={showModal} setShowModal={changeModal} projectName={projectName} description={description} />
 
-            <Grid container spacing={3} sx={{ backgroundColor: 'transparent', justifyContent: 'center' }}>
+            <Grid container spacing={3} sx={{ backgroundColor: 'transparent', justifyContent: 'center', paddingTop:'9em' }}>
 
                 {projects.map((j: any) => <Grid item xs={12} md={5} sx={{ backgroundColor: '#332F2E', height: '200px', margin:'10px',  display: 'flex', justifyContent: 'center' }}
                     onClick={() => { setProjectName(j.name); setDescription(j.description);setShowModal(true) }}>

@@ -17,7 +17,6 @@ const CodeBlock = ({ node, inline, className, children, ...props }) => {
             }}
             {...props}
         />
-
     ) : (
         <code className={className} {...props}>
             {children}

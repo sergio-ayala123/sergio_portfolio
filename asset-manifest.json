@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/sergio_portfolio/static/css/main.665b5304.css",
+    "main.js": "/sergio_portfolio/static/js/main.1306a762.js",
+    "static/js/787.002f3215.chunk.js": "/sergio_portfolio/static/js/787.002f3215.chunk.js",
+    "static/media/gol.png": "/sergio_portfolio/static/media/gol.1bd8d067a8a817ccc81d.png",
+    "static/media/github-logo.png": "/sergio_portfolio/static/media/github-logo.37185c9cf4a283bc2611.png",
+    "static/media/pokeapi_256.png": "/sergio_portfolio/static/media/pokeapi_256.888baca4809420be1126.png",
+    "index.html": "/sergio_portfolio/index.html",
+    "main.665b5304.css.map": "/sergio_portfolio/static/css/main.665b5304.css.map",
+    "main.1306a762.js.map": "/sergio_portfolio/static/js/main.1306a762.js.map",
+    "787.002f3215.chunk.js.map": "/sergio_portfolio/static/js/787.002f3215.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.665b5304.css",
+    "static/js/main.1306a762.js"
+  ]
+}

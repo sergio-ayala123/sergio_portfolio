@@ -60,8 +60,8 @@ p {
     color: #ffffff;
     font-size: 22px;
     font-family:'Bowlby One SC', cursive;
-    font-weight: lighter;
-    line-height: 20px;
+    font-weight:lighter;
+    line-height: 22px;
     width: 1200px;
     text-align: left;
     padding: 1em 1em 1em 0em;
@@ -170,3 +170,8 @@ h5 {
     font-family: 'Bowlby One SC', cursive;
 
 }
+ h4 {
+    font-family: 'Bowlby One SC', cursive;
+    color: #ffffff;
+    font-size:35px;
+ }

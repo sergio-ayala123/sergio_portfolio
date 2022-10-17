@@ -17,7 +17,6 @@ const BlogEntry = () => {
 
     return (
         <div className='Blog'>
-            <p className='date'>{title}</p>
            <article>
 
             <ReactMarkdown children={content} components = {{code:CodeBlock}} />

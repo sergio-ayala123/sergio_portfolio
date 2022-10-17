@@ -4,18 +4,32 @@ import BlogTitle from "../components/BlogTitle";
 
 const Blog = () => {
 
+    interface mdFile {
+        name:string, 
+        description:string
+    }
 
-    const mdFileNames = ["Hashmaps_Collections_Stacks", "Javascript_Classes","Python_TDD", "SCC_Algorithm"]
+    // ,, ,  Hashmaps_Collections_Stacks
+    const mdFileNames:mdFile[] = [{name:"Hashmaps_Collections_Stacks", description:"Learn about Hash Maps, Collections, and Stacks in Javascript"}, 
+                                  {name:"Javascript_Classes", description:"Learn about Javascript Classes"}, 
+                                  {name:"Python_TDD", description:"Learn about Python TDD"}, 
+                                  {name:"SCC_Algorithm", description:"Learn about the Strongly Connected Components Algorithm"}, 
+                                  {name:"Using_Filter_Sort_Includes_For_ApiData", description:"Learn how to combine Filter, Sort, and string.includes in your API calls"}, 
+                                  {name:"Randomized_DFS_Maze", description:"Learn how to create a text maze using Randomized Depth First Search"}]
 
     return (
         <motion.div className="Blog" initial = {{opacity:0}} animate = {{opacity:1}} exit = {{opacity:0}} style ={{minHeight:'100vh'}}>
-            <h1>Blogs go here</h1>
-            <Grid sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                {mdFileNames.map(i => <BlogTitle name={i} />)}
+            <Grid sx = {{display:'flex', justifyContent:'center'}} container rowSpacing={1}  columns = {{xs:3, sm:8, md:12}}>
+
+                {mdFileNames.map(i => 
+                    <Grid item xs={12} md={12} sx = {{display:'flex', justifyContent:'center', padding:'1em'}}>
+
+                               
+                    <BlogTitle name={i.name} description = {i.description} />
+                    </Grid>  )}
             </Grid>
             
         </motion.div>
     );
 }
 export default Blog;
-

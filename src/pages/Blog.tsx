@@ -15,7 +15,9 @@ const Blog = () => {
                                   {name:"Python_TDD", description:"Learn about Python TDD"}, 
                                   {name:"SCC_Algorithm", description:"Learn about the Strongly Connected Components Algorithm"}, 
                                   {name:"Using_Filter_Sort_Includes_For_ApiData", description:"Learn how to combine Filter, Sort, and string.includes in your API calls"}, 
-                                  {name:"Randomized_DFS_Maze", description:"Learn how to create a text maze using Randomized Depth First Search"}]
+                                  {name:"Randomized_DFS_Maze", description:"Learn how to create a text maze using Randomized Depth First Search"}, 
+                                  {name:"API_Calls_in_React_VS_in_ASP.NET", description:"Learn the differences between API calls in React and ASP.NET"}, 
+                                  {name:"Array_To_Binary_Search_Tree", description:"Learn how to make a Binary Search Tree From an Array"}]
 
     return (
         <motion.div className="Blog" initial = {{opacity:0}} animate = {{opacity:1}} exit = {{opacity:0}} style ={{minHeight:'100vh'}}>

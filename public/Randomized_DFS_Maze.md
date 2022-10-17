@@ -87,6 +87,51 @@ def removeWall(current: Cell, nextCell: Cell):
 
 ```
 
+To make the output of the maze look a little nicer, we then want to add a border around the whole maze so that the algorithm ignores these cells: 
+
+```python
+for index in range(50):
+    cellArray[index][0].isVisited = True
+for index in range(50):
+    cellArray[0][index].isVisited = True
+
+```
+
+
+After all this is done, we can now move onto the main function of the algorithm:
+
+
+```python
+
+candidateCells = []
+def createMaze():
+    currentCell = cellArray[1][1]
+    neighbor = checkNeighbors(currentCell)
+
+    for x in range(2500):
+        if(neighbor == 'no neighbor'):
+            while(len(candidateCells)> 0):
+                currentCell = candidateCells.pop()
+                neighbor = checkNeighbors(currentCell)
+                if(neighbor == 'no neighbor'):
+                    continue
+                break
+        else:
+            removeWall(currentCell, neighbor)
+            unvisitedCells.remove(cellArray[neighbor.x][neighbor.y])
+            cellArray[neighbor.x][neighbor.y].isVisited = True
+            candidateCells.append(currentCell)
+            currentCell = neighbor
+            neighbor = checkNeighbors(currentCell)
+
+createMaze()
+
+
+
+```
+
+
+
 The output should look something like this:
 
 ![logo](https://github.com/sergio-ayala123/sergio_portfolio/raw/master/public/dfsMazePython.jpg)
